@@ -4,6 +4,20 @@ body {
     text-align: center;
   }
   
+.element {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}  
+
 h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -42,6 +56,8 @@ h2 {
     display: inline-block;
     
 }
+
+
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
