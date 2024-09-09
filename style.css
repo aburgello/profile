@@ -3,20 +3,12 @@ body {
     font-family: "Poppins", sans-serif;
     text-align: center;
   }
-  
+
 .element {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out;
+  
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}  
+
 
 h1 {
     font-family: "Poppins", sans-serif;
@@ -51,13 +43,34 @@ h2 {
 }
 
 #social-icon {
+    color: cornflowerblue;
     margin-right: 10px;
     margin-left: 10px;
     display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideInFade 1s ease-in-out forwards 1.2s;
     
 }
 
+.element1 {opacity: 0;
+  animation: slideInFade 0.8s ease-in-out forwards;
+}
 
+.element2 {opacity: 0;
+  animation: slideInFade 0.8s ease-in-out forwards 0.2s;
+
+}
+@keyframes slideInFade {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
