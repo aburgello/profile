@@ -1,5 +1,5 @@
-@import url(/components/title.css);
-@import url(/components/avatar.css);
+@import url("/components/title.css");
+@import url("/components/avatar.css");
 
 body {
     color: rgb(10, 10, 10);
